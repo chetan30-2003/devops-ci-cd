@@ -1,0 +1,6 @@
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .  # Ensure all files, including index.js, are copied
+CMD ["node", "index.js"]
