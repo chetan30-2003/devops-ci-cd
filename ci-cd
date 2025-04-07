@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "Initial commit - DevOps CI/CD setup"
+git branch -M main
+git remote add origin https://github.com/your-username/devops-ci-cd.git
+git push -u origin main
