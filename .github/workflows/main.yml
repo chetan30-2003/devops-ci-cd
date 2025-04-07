@@ -29,10 +29,10 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t chetan30-2003/devops-ci-cd:latest .
+          docker build -t bhandarwar/devops-ci-cd:latest .
 
       - name: Log in to DockerHub
-        run: echo "${{ secrets.Shreyash30 }}" | docker login -u "${{ secrets.chetan30-2003 }}" --password-stdin
+        run: echo "${{ secrets.Shreyash30 }}" | docker login -u "${{ secrets.bhandarwar }}" --password-stdin
 
       - name: Push Docker Image
-        run: docker push chetan30-2003/devops-ci-cd:latest
+        run: docker push bhandarwar/devops-ci-cd:latest
